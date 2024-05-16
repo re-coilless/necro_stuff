@@ -1,0 +1,10 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/necro_flagellation/chamber.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<LifetimeComponent
+		lifetime="60"
+	></LifetimeComponent>
+</Entity>

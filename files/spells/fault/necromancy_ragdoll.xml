@@ -1,0 +1,32 @@
+<Entity >
+	<Base file="mods/necro_stuff/files/spells/necro_ray/necromancy_ragdoll.xml" >
+		<AnimalAIComponent
+			attack_dash_enabled="1"
+		></AnimalAIComponent>
+		
+		<PhysicsAIComponent
+			target_vec_max_len="10"
+			force_coeff="100"
+			force_balancing_coeff="1"
+			force_max="200"
+		></PhysicsAIComponent>
+		
+		<LightComponent 
+			radius="400"
+		></LightComponent>
+		
+		<DamageModelComponent 
+            hp="66"
+		></DamageModelComponent>
+	</Base>
+	
+	<Entity name="charm" >
+		<InheritTransformComponent 
+		></InheritTransformComponent>	
+		
+		<GameEffectComponent 
+			effect="CHARM"
+			frames="-1"
+		></GameEffectComponent>
+	</Entity>
+</Entity>

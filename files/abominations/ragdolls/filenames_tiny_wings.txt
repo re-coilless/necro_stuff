@@ -1,0 +1,3 @@
+mods/necro_stuff/files/abominations/ragdolls/fragments/tiny_body.png
+mods/necro_stuff/files/abominations/ragdolls/fragments/tiny_legs.png
+mods/necro_stuff/files/abominations/ragdolls/fragments/tiny_wings.png

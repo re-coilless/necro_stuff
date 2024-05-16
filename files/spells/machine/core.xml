@@ -1,0 +1,72 @@
+<Entity tags="teleportable_NOT,machine_core,glue_NOT">
+	<VelocityComponent
+		updates_velocity="0"
+		gravity_y="0"
+	></VelocityComponent>
+
+	<ParticleEmitterComponent 
+		_tags="grow"
+		_enabled="0"
+		emitted_material_name="necrostate"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="-0.5"
+		x_pos_offset_max="0.5"
+		y_pos_offset_min="-1.5"
+		y_pos_offset_max="1.5"
+		x_vel_min="-0"
+		x_vel_max="0"
+		y_vel_min="0"
+		y_vel_max="0"
+		count_min="6"
+		count_max="6"
+		lifetime_min="0.1"
+		lifetime_max="0.3"
+		create_real_particles="1"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		is_emitting="1"
+		friction="0"
+		render_on_grid="1"
+		attractor_force="0"
+	></ParticleEmitterComponent>
+	
+	<LuaComponent 
+		script_source_file="mods/necro_stuff/files/spells/machine/core_init.lua"
+		remove_after_executed="1"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<LuaComponent 
+		_tags="grow"
+		_enabled="0"
+		script_source_file="mods/necro_stuff/files/spells/machine/spread.lua"
+		execute_every_n_frame="5"
+	></LuaComponent>
+	
+	<LuaComponent 
+		_tags="grow"
+		_enabled="0"
+		script_source_file="mods/necro_stuff/files/spells/machine/core_split.lua"
+		execute_every_n_frame="16"
+	></LuaComponent>
+	
+	<LuaComponent 
+		script_source_file="mods/necro_stuff/files/spells/machine/core_fruit.lua"
+		execute_on_removed="1"
+		execute_every_n_frame="-1"
+	></LuaComponent>
+	
+	<LifetimeComponent
+		_tags="grow"
+		_enabled="0"
+		lifetime="250"
+	></LifetimeComponent>
+	
+	<!-- <AudioLoopComponent -->
+		<!-- _tags="grow" -->
+		<!-- file="data/audio/Desktop/misc.bank" -->
+		<!-- event_name="misc/root_grow" -->
+		<!-- auto_play="1" -->
+	<!-- ></AudioLoopComponent> -->
+</Entity>

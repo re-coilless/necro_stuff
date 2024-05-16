@@ -1,0 +1,2 @@
+mods/necro_stuff/files/abominations/ragdolls/fragments/large_body.png
+mods/necro_stuff/files/abominations/ragdolls/fragments/large_legs.png

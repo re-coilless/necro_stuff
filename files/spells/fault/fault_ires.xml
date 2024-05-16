@@ -1,0 +1,44 @@
+<Entity >
+	<ExplosionComponent
+		trigger="ON_DEATH"
+		><config_explosion
+			audio_enabled="0"
+			never_cache="1" 
+			damage="6"
+			load_this_entity="mods/necro_stuff/files/spells/fault/faulted_answer.xml"
+			camera_shake="6" 
+			explosion_radius="6" 
+			explosion_sprite_lifetime="0" 
+			explosion_sprite=""
+			hole_destroy_liquid="0" 
+			hole_enabled="1" 
+			hole_image="data/temp/explosion_hole.png" 
+			ray_energy="66666"
+			max_durability_to_destroy="6"
+			particle_effect="0" 
+			physics_explosion_power.min="6"
+			physics_explosion_power.max="6" 
+			physics_throw_enabled="1"  
+			shake_vegetation="1" 
+			sparks_count_max="6" 
+			sparks_count_min="6"
+			material_sparks_enabled="1"
+			material_sparks_count_max="6"
+			material_sparks_count_min="6" 
+			sparks_enabled="0"  
+			light_enabled="0" 
+			stains_enabled="0"
+		></config_explosion>
+	</ExplosionComponent>
+	
+	<LoadEntitiesComponent
+        count.min="1"
+        count.max="1"
+        kill_entity="0"
+        entity_file="mods/necro_stuff/files/spells/fault/faulted_wrath.xml"
+    ></LoadEntitiesComponent>
+	
+	<LifetimeComponent
+		lifetime="20"
+	></LifetimeComponent>
+</Entity>

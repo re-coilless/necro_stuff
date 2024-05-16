@@ -1,0 +1,39 @@
+<Entity name="limb_attacker" >
+	<InheritTransformComponent>
+	</InheritTransformComponent>
+
+	<IKLimbAttackerComponent
+		radius="50"
+	></IKLimbAttackerComponent>
+	
+	<IKLimbComponent
+		length="60"
+	></IKLimbComponent>
+
+	<SpriteComponent 
+		image_file="mods/necro_stuff/files/stuff/leg1.png" 
+		z_index="1.1"
+		offset_x="0"
+		offset_y="2"
+		update_transform="0"
+		update_transform_rotation="0"
+	></SpriteComponent>
+
+	<SpriteComponent 
+		image_file="mods/necro_stuff/files/stuff/leg3.png" 
+		z_index="1.1"
+		offset_x="0"
+		offset_y="2"
+		update_transform="0"
+		update_transform_rotation="0"
+	></SpriteComponent>
+
+	<SpriteComponent 
+		image_file="mods/necro_stuff/files/stuff/leg2.png" 
+		z_index="1.1"
+		offset_x="2"
+		offset_y="2"
+		update_transform="0"
+		update_transform_rotation="0"
+	></SpriteComponent>
+</Entity>

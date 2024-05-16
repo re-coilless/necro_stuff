@@ -1,0 +1,23 @@
+<Entity >
+	<LuaComponent
+		_tags="arcane_infusion"
+		script_source_file="mods/necro_stuff/files/spells/arcane_infusion/arcane_infusion.lua"
+		execute_every_n_frame="10"
+	></LuaComponent>
+	
+	<SpriteComponent 
+		_tags="arcane_infusion"
+		alpha="1"
+		image_file="data/particles/area_indicator_032_purple.png"
+		next_rect_animation=""
+		offset_x="16"
+		offset_y="16"
+		has_special_scale="1"
+		special_scale_x="0.01"
+		special_scale_y="0.01"
+		rect_animation="spawn"
+		z_index="1.1"
+		never_ragdollify_on_death="1"
+		smooth_filtering="1"
+	></SpriteComponent>
+</Entity>

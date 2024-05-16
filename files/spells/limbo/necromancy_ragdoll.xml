@@ -1,0 +1,61 @@
+<Entity >
+	<Base file="mods/necro_stuff/files/spells/necro_ray/necromancy_ragdoll.xml" >
+		<AnimalAIComponent
+			attack_dash_enabled="1"
+		></AnimalAIComponent>
+		
+		<PhysicsAIComponent
+			target_vec_max_len="10"
+			force_coeff="100"
+			force_balancing_coeff="1"
+			force_max="200"
+		></PhysicsAIComponent>
+		
+		<LightComponent 
+			radius="600"
+		></LightComponent>
+		
+		<DamageModelComponent 
+            hp="666"
+		></DamageModelComponent>
+	</Base>
+	
+	<Entity >
+		<InheritTransformComponent 
+			><Transform
+				position.x="-5"
+				position.y="0"
+			></Transform>
+		</InheritTransformComponent>
+		
+		<Base file="mods/necro_stuff/files/spells/limbo/holder.xml" >
+		</Base>
+	</Entity>
+	
+	<Entity >
+		<InheritTransformComponent 
+			><Transform
+				position.x="5"
+				position.y="0"
+			></Transform>
+		</InheritTransformComponent>
+		
+		<Base file="mods/necro_stuff/files/spells/limbo/holder.xml" >
+		</Base>
+	</Entity>
+	
+	<Entity >
+		<Base file="mods/necro_stuff/files/spells/limbo/necro_inferno_effect.xml" >
+		</Base>
+	</Entity>
+	
+	<Entity name="charm" >
+		<InheritTransformComponent 
+		></InheritTransformComponent>	
+		
+		<GameEffectComponent 
+			effect="CHARM"
+			frames="-1"
+		></GameEffectComponent>
+	</Entity>
+</Entity>

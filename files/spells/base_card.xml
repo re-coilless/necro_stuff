@@ -1,0 +1,58 @@
+<Entity tags="necro_spell" >
+	<Base file="data/entities/base_custom_card.xml" >
+		<SpriteComponent 
+			_tags="enabled_in_world,item_identified"
+			emissive="1"
+			z_index="-1"
+		></SpriteComponent>
+		
+		<SpriteComponent 
+			_tags="enabled_in_world,item_unidentified"
+			z_index="-1"
+		></SpriteComponent>
+		
+		<SpriteComponent 
+			_tags="enabled_in_world,item_bg"
+			z_index="-0.99"
+		></SpriteComponent>
+		
+		<SpriteOffsetAnimatorComponent
+			_tags="disabled_in_world"
+			y_amount="0"
+			y_speed="0"
+		></SpriteOffsetAnimatorComponent>
+		
+		<SpriteOffsetAnimatorComponent
+			_tags="disabled_in_world"
+			y_amount="0"
+			y_speed="0"
+		></SpriteOffsetAnimatorComponent>
+		
+		<SpriteOffsetAnimatorComponent
+			_tags="disabled_in_world"
+			y_amount="0"
+			y_speed="0"
+		></SpriteOffsetAnimatorComponent>
+		
+		<SpriteOffsetAnimatorComponent
+			_tags="disabled_in_world"
+			y_amount="0"
+			y_speed="0"
+		></SpriteOffsetAnimatorComponent>
+	</Base>
+	
+	<SpriteComponent 
+		_tags="enabled_in_world,true_bg"
+		visible="1" 
+		image_file="mods/necro_stuff/files/spells/card_bg.png"
+		z_index="-0.98"
+		offset_x="7"
+		offset_y="16"
+	></SpriteComponent>
+	
+	<LuaComponent
+		_tags="enabled_in_world"
+		script_source_file="mods/necro_stuff/files/spells/bg_fucker.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+</Entity>

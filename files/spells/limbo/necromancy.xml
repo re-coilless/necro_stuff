@@ -1,0 +1,7 @@
+<Entity name="undeader">
+	<Base file="mods/necro_stuff/files/spells/necro_ray/necromancy.xml" >
+		<GameEffectComponent
+			ragdoll_effect_custom_entity_file="mods/necro_stuff/files/spells/limbo/necromancy_ragdoll.xml"
+		></GameEffectComponent>
+	</Base>
+</Entity>

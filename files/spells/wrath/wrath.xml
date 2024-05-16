@@ -1,0 +1,69 @@
+<Entity name="$projectile_default" tags="projectile_player" >
+	<Base file="data/entities/base_projectile.xml" >
+		<VelocityComponent
+			gravity_y="0" 
+			air_friction="666" 
+			mass="0.001"
+		></VelocityComponent>
+	</Base>
+	
+	<ProjectileComponent 
+		_enabled="1" 
+		lob_min="0.8"
+		lob_max="1.0"
+		speed_min="0"
+		speed_max="0"
+		friction="0.0"
+		direction_random_rad="0"
+		on_death_explode="0"
+		on_death_gfx_leave_sprite="0" 
+		on_lifetime_out_explode="0"
+		ground_collision_fx="0"
+		on_collision_die="0"
+		lifetime="10"
+		damage="0"
+		collide_with_world="1"
+		penetrate_world="1"
+		penetrate_world_velocity_coeff="1"
+		penetrate_entities="1"
+		velocity_sets_scale="0"
+		lifetime_randomness="0"
+		ragdoll_force_multiplier="0.01"
+		hit_particle_force_multiplier="0.25"
+		ground_penetration_coeff="0"
+		ground_penetration_max_durability_to_destroy="0"
+	></ProjectileComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/wrath/wrath.lua"
+		execute_every_n_frame="1"
+		remove_after_executed="1"
+	></LuaComponent>
+	
+	<BlackHoleComponent
+		particle_attractor_force="-50"
+		damage_probability="0"
+		damage_amount="0"
+		radius="200"
+	></BlackHoleComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/gravity.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<VariableStorageComponent
+		name="event_horizon"
+		value_float="200"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="gravity_coef"
+		value_float="-666"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="projectile_file"
+		value_string="mods/necro_stuff/files/spells/wrath/wrath.xml"
+	></VariableStorageComponent>
+</Entity>

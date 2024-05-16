@@ -1,0 +1,35 @@
+<Entity tags="behest_body">
+	<VariableStorageComponent
+		name="link"
+		value_int="0"
+	></VariableStorageComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/behest/behest_body.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<HotspotComponent
+        _tags="behest,pos3"
+        offset.x="5"
+        offset.y="-25"
+	></HotspotComponent>
+	
+	<HotspotComponent
+        _tags="behest,pos1"
+        offset.x="20"
+        offset.y="-15"
+	></HotspotComponent>
+	
+	<HotspotComponent
+        _tags="behest,pos2"
+        offset.x="20"
+        offset.y="5"
+	></HotspotComponent>
+	
+	<HotspotComponent
+        _tags="behest,pos4"
+        offset.x="5"
+        offset.y="15"
+	></HotspotComponent>
+</Entity>

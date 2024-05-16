@@ -1,0 +1,7 @@
+<Entity name="head_shield">
+	<Base file="mods/necro_stuff/files/abominations/head/base.xml" >
+        <SpriteComponent
+            image_file="mods/necro_stuff/files/abominations/head/shield_pic.xml"
+        ></SpriteComponent>
+    </Base>
+</Entity>

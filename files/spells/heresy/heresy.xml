@@ -1,0 +1,9 @@
+<Entity>
+    <GameEffectComponent 
+        effect="CUSTOM"
+		exclusivity_group="666"
+        frames="-1"
+		ragdoll_effect="CUSTOM_RAGDOLL_ENTITY"
+		ragdoll_effect_custom_entity_file="mods/necro_stuff/files/spells/heresy/heresy_ragdoll.xml"
+	></GameEffectComponent>
+</Entity>

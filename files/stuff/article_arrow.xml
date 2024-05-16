@@ -1,0 +1,11 @@
+<Entity serialize="0" tags="article_arrow,teleportable_NOT,glue_NOT" >
+	<SpriteComponent
+		_enabled="1"
+		offset_x="4.5"
+		offset_y="10"
+		image_file="mods/necro_stuff/files/stuff/article_arrow.png"
+		emissive="1"
+		fog_of_war_hole="0"
+		z_index="-9999999999999"
+	></SpriteComponent>
+</Entity>

@@ -1,0 +1,2 @@
+mods/necro_stuff/files/abominations/ragdolls/fragments/medium_body.png
+mods/necro_stuff/files/abominations/ragdolls/fragments/medium_wings.png

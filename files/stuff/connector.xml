@@ -1,0 +1,24 @@
+<Entity serialize="0" >
+	<InheritTransformComponent />
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/stuff/connector_controller.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	<VariableStorageComponent
+		name="target"
+		value_int="0"
+	></VariableStorageComponent>
+	<LifetimeComponent
+		lifetime="5"
+	></LifetimeComponent>
+	
+	<Entity >
+		<Base file="mods/necro_stuff/files/stuff/connector_fx.xml" />
+	</Entity>
+	<Entity >
+		<Base file="mods/necro_stuff/files/stuff/connector_fx.xml" />
+	</Entity>
+	<Entity >
+		<Base file="mods/necro_stuff/files/stuff/connector_fx.xml" />
+	</Entity>
+</Entity>

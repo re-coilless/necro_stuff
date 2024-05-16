@@ -1,0 +1,7 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/necro_flagellation/necro_flagellation.lua"
+		execute_every_n_frame="5"
+		remove_after_executed="1"
+	></LuaComponent>
+</Entity>

@@ -1,0 +1,80 @@
+<Entity >
+	<InheritTransformComponent>
+		<Transform 
+			position.x="0"
+			position.y="0"
+		></Transform>
+	</InheritTransformComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="cure"
+		emitted_material_name="cure"
+		x_pos_offset_min="-2"
+		x_pos_offset_max="2"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-2"
+		x_vel_max="2"
+		y_vel_min="-50"
+		y_vel_max="-30"
+		count_min="8"
+		count_max="10"
+		lifetime_min="40"
+		lifetime_max="50"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="5"
+		emitter_lifetime_frames="-1"
+		is_emitting="1"
+	></ParticleEmitterComponent>
+	
+	<!-- <GameEffectComponent  -->
+        <!-- effect="CUSTOM" -->
+        <!-- frames="-1" -->
+		<!-- ragdoll_effect="CUSTOM_RAGDOLL_ENTITY" -->
+		<!-- ragdoll_effect_custom_entity_file="mods/necro_stuff/files/spells/cure/cure.xml" -->
+	<!-- ></GameEffectComponent> -->
+	
+	<SpriteComponent 
+		alpha="0.6"
+		image_file="data/particles/fog_of_war_hole.xml"
+		smooth_filtering="1"
+		fog_of_war_hole="1"
+	></SpriteComponent>
+	
+	<LightComponent 
+		_enabled="1"
+		radius="128"
+		fade_out_time="2"
+		r="168"
+		g="202"
+		b="88"
+	></LightComponent>
+	
+	<LightComponent 
+		_enabled="1"
+		radius="64"
+		r="168"
+		g="202"
+		b="88"
+	></LightComponent>
+	
+	<LightComponent 
+		_enabled="1"
+		radius="64"
+		r="168"
+		g="202"
+		b="88"
+	></LightComponent>
+	
+	<VariableStorageComponent
+		name="scaled"
+		value_bool="0"
+	></VariableStorageComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/cure/cure.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+</Entity>

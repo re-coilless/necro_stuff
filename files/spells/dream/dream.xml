@@ -1,0 +1,7 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/dream/dream.lua"
+		execute_every_n_frame="3"
+		remove_after_executed="1"
+	></LuaComponent>
+</Entity>

@@ -1,0 +1,12 @@
+<Entity name="head_vampire">
+	<Base file="mods/necro_stuff/files/abominations/head/base.xml" >
+        <SpriteComponent
+            image_file="mods/necro_stuff/files/abominations/head/vampire_pic.xml"
+        ></SpriteComponent>
+    </Base>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/vampire.lua"
+		execute_every_n_frame="20"
+	></LuaComponent>
+</Entity>

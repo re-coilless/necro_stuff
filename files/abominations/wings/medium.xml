@@ -1,0 +1,152 @@
+<Sprite 
+	filename="mods/necro_stuff/files/abominations/wings/medium.png" 
+	offset_x="19" 
+	offset_y="21"
+	default_animation="stand" >
+	
+	<RectAnimation 
+		frame_count="4" 
+		frame_height="30" 
+		frame_wait="0.2" 
+		frame_width="35" 
+		frames_per_row="8" 
+		name="stand" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="30" 
+		frame_wait="0.082" 
+		frame_width="35" 
+		frames_per_row="8" 
+		name="walk" 
+		pos_x="0" 
+		pos_y="30" 
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="30" 
+		frame_wait="0.082" 
+		frame_width="35" 
+		frames_per_row="8" 
+		name="run" 
+		pos_x="0" 
+		pos_y="30" 
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="30" 
+		frame_wait="0.082" 
+		frame_width="35" 
+		frames_per_row="8" 
+		name="burn" 
+		pos_x="0" 
+		pos_y="30"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="3" 
+		frame_height="30" 
+		frame_wait="0.082" 
+		frame_width="35" 
+		frames_per_row="8" 
+		loop="0" 
+		name="jump_up" 
+		pos_x="0" 
+		pos_y="60"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="3" 
+		frame_height="30" 
+		frame_wait="0.082" 
+		frame_width="35" 
+		frames_per_row="8" 
+		loop="0" 
+		name="jump_fall" 
+		pos_x="0" 
+		pos_y="60" 
+	></RectAnimation>
+
+	<RectAnimation
+		name="fly_idle"
+		pos_x="0"
+		pos_y="90"
+		frame_count="6"
+		frame_height="30"
+		frame_width="35"
+		frame_wait="0.12"
+		frames_per_row="8"
+		loop="1"
+		
+		><Event 
+			check_physics_material="0" 
+			frame="4" 
+			max_distance="500" 
+			name="flap" 
+			on_finished="0" 
+			probability="1"
+		></Event>
+	</RectAnimation>
+
+	<RectAnimation
+		name="fly_move"
+		pos_x="0"
+		pos_y="90"
+		frame_count="6"
+		frame_height="30"
+		frame_width="35"
+		frame_wait="0.09"
+		frames_per_row="8"
+		loop="1"
+		
+		><Event 
+			check_physics_material="0" 
+			frame="4" 
+			max_distance="500" 
+			name="flap" 
+			on_finished="0" 
+			probability="1"
+		></Event>
+	</RectAnimation>
+	
+	<RectAnimation 
+		frame_count="4" 
+		frame_height="30" 
+		frame_wait="0.095" 
+		frame_width="35" 
+		frames_per_row="8" 
+		loop="0" 
+		name="crouch" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="4" 
+		frame_height="30" 
+		frame_wait="0.095" 
+		frame_width="35" 
+		frames_per_row="8" 
+		loop="0" 
+		name="attack" 
+		pos_x="0" 
+		pos_y="120" 
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="4" 
+		frame_height="30" 
+		frame_wait="0.12" 
+		frame_width="35" 
+		frames_per_row="8" 
+		loop="0" 
+		name="eat" 
+		pos_x="0" 
+		pos_y="0"	
+	></RectAnimation>
+</Sprite>

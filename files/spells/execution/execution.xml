@@ -1,0 +1,18 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/execution/execution.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+	></LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/execution/execution_speed.lua"
+		execute_on_added="1"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<VariableStorageComponent
+		name="mode"
+		value_int="0"
+	></VariableStorageComponent>
+</Entity>

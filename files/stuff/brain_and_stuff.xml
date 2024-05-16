@@ -1,0 +1,207 @@
+<Entity name="Necro Stuff" tags="teleportable_NOT,glue_NOT,polymorphable_NOT,necrobot_NOT,necro_brain,cured" >
+	<LimbBossComponent
+		state="1"
+	></LimbBossComponent>
+	
+	<SpriteAnimatorComponent>
+	</SpriteAnimatorComponent>
+	
+	<PathFindingComponent 
+		can_dive="1" 
+		can_fly="1" 
+		can_jump="0" 
+		can_swim_on_surface="1" 
+		can_walk="1" 
+		cost_of_flying="0" 
+		distance_to_reach_node_x="20" 
+		distance_to_reach_node_y="20" 
+		frames_between_searches="20" 
+		frames_to_get_stuck="120"
+		iterations_max_no_goal="9999999" 
+		iterations_max_with_goal="145000" 
+		search_depth_max_no_goal="500" 
+		search_depth_max_with_goal="145000" 
+		y_walking_compensation="3"
+	></PathFindingComponent>
+
+	<PathFindingGridMarkerComponent 
+		_enabled="1" 
+		marker_offset_x="0" 
+		marker_offset_y="-2" 
+		marker_work_flag="16"
+	></PathFindingGridMarkerComponent>
+
+	<IKLimbsAnimatorComponent
+		no_ground_attachment_penalty_coeff="0.5"
+		leg_velocity_coeff="15"
+	></IKLimbsAnimatorComponent>
+
+	<PhysicsAIComponent
+		target_vec_max_len="10"
+		force_coeff="5"
+		force_balancing_coeff="0.1"
+		force_max="20"
+		torque_coeff="50"
+		torque_balancing_coeff="4"
+		torque_max="50.0"
+		damage_deactivation_probability="0"
+		free_if_static="1"
+	></PhysicsAIComponent>
+
+	<AnimalAIComponent 
+		_enabled="1" 
+		aggressiveness_max="20" 
+		aggressiveness_min="20" 
+		ai_state="1" 
+		ai_state_timer="1" 
+		attack_dash_enabled="0" 
+		attack_if_damaged_probability="100" 
+		attack_knockback_multiplier="100" 
+		attack_landing_ranged_enabled="0" 
+		attack_melee_action_frame="3"  
+		attack_melee_enabled="0" 
+		attack_melee_finish_action_frame="2" 
+		attack_melee_finish_enabled="0" 
+		attack_melee_frames_between="10" 
+		attack_melee_max_distance="20" 
+		attack_melee_offset_x="0" 
+		attack_melee_offset_y="0" 
+		attack_only_if_attacked="0" 
+		attack_ranged_action_frame="1" 
+		attack_ranged_aim_rotation_enabled="0" 
+		attack_ranged_aim_rotation_shooting_ok_angle_deg="10" 
+		attack_ranged_aim_rotation_speed="3" 
+		attack_ranged_enabled="1"
+		attack_ranged_entity_file=""
+		attack_ranged_entity_count_max="1" 
+		attack_ranged_entity_count_min="1" 
+		attack_ranged_frames_between="1" 
+		attack_ranged_max_distance="50" 
+		attack_ranged_min_distance="0" 
+		attack_ranged_offset_x="0" 
+		attack_ranged_offset_y="0" 
+		attack_ranged_predict="0" 
+		attack_ranged_state_duration_frames="45" 
+		attack_ranged_use_message="0" 
+		can_fly="1" 
+		can_walk="1" 
+		creature_detection_angular_range_deg="30" 
+		creature_detection_check_every_x_frames="300" 
+		creature_detection_range_x="50" 
+		creature_detection_range_y="50" 
+		defecates_and_pees="0" 
+		dont_counter_attack_own_herd="1" 
+		escape_if_damaged_probability="0" 
+		eye_offset_x="0" 
+		eye_offset_y="0" 
+		food_eating_create_particles="1" 
+		food_material="air" 
+		food_particle_effect_material="air" 
+		hide_from_prey="0" 
+		hide_from_prey_target_distance="200" 
+		hide_from_prey_time="300" 
+		is_static_turret="0" 
+		max_distance_to_cam_to_start_hunting="300" 
+		max_distance_to_move_from_home="0" 
+		mouth_offset_x="0" 
+		mouth_offset_y="0" 
+		needs_food="1" 
+		path_cleanup_explosion_radius="6" 
+		path_distance_to_target_node_to_turn_around="0" 
+		pathfinding_max_depth_has_target="120" 
+		pathfinding_max_depth_no_target="50" 
+		preferred_job="JobDefault" 
+		sense_creatures="1" 
+		sense_creatures_through_walls="0" 
+		tries_to_ranged_attack_friends="0"
+	></AnimalAIComponent>
+	
+	<CharacterDataComponent 
+	></CharacterDataComponent>
+	
+	<Inventory2Component
+		quick_inventory_slots="1"
+		full_inventory_slots_x="1"
+		full_inventory_slots_y="1"
+	></Inventory2Component>
+	
+	<ControlsComponent
+		enabled="0" 
+	></ControlsComponent>
+	
+	<PhysicsBodyComponent 
+		force_add_update_areas="1"
+		allow_sleep="1" 
+		angular_damping="0.02" 
+		fixed_rotation="1" 
+		is_bullet="0" 
+		linear_damping="0"
+	></PhysicsBodyComponent>
+	
+	<PhysicsShapeComponent
+		is_circle="1"
+		radius_x="5"
+		radius_y="5"
+		friction="0.0"
+		restitution="0.3"
+	></PhysicsShapeComponent>
+	
+	<ShotEffectComponent 
+		extra_modifier="true_form_power"
+	></ShotEffectComponent>
+	
+	<GenomeDataComponent 
+		food_chain_rank="20" 
+		herd_id="player" 
+		is_predator="1"
+		berserk_dont_attack_friends="1"
+	></GenomeDataComponent>
+	
+	<ItemPickUpperComponent
+		is_immune_to_kicks="1"
+    	is_in_npc="1"
+	></ItemPickUpperComponent>
+	
+	<DamageNearbyEntitiesComponent
+		radius="5"
+		time_between_damaging="600"
+		damage_min="0.2"
+		damage_max="0.4"
+		target_tag="enemy"
+		damage_type="DAMAGE_CURSE"
+		damage_description="Unimaginable Horror"
+		ragdoll_fx="NONE"
+	></DamageNearbyEntitiesComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/stuff/brain_controller.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<Entity name="arm_r" tags="player_arm_r">
+		<InheritTransformComponent
+			only_position="1"
+		></InheritTransformComponent>  
+		
+		<HotspotComponent
+			_tags="hand"
+			offset.x="-3"
+			offset.y="0"
+			transform_with_scale="1"
+		></HotspotComponent>
+	</Entity>
+	
+	<VariableStorageComponent
+		name="necro_stage"
+		value_int="1"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="leg_count"
+		value_int="3"
+	></VariableStorageComponent>
+	
+	<Entity><Base file="mods/necro_stuff/files/stuff/leg.xml" /></Entity>
+	<Entity><Base file="mods/necro_stuff/files/stuff/leg.xml" /></Entity>
+	<Entity><Base file="mods/necro_stuff/files/stuff/leg.xml" /></Entity>
+</Entity>

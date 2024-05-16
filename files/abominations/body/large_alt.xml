@@ -1,0 +1,167 @@
+<Sprite 
+	filename="mods/necro_stuff/files/abominations/body/large.png" 
+	hotspots_filename="mods/necro_stuff/files/abominations/body/large_hotspots.png"
+	offset_x="19" 
+	offset_y="14"
+	default_animation="stand" >
+	
+	<RectAnimation 
+		frame_count="5" 
+		frame_height="25" 
+		frame_wait="0.2" 
+		frame_width="45" 
+		frames_per_row="8" 
+		name="stand" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="25" 
+		frame_wait="0.082" 
+		frame_width="45" 
+		frames_per_row="8" 
+		name="walk" 
+		pos_x="0" 
+		pos_y="25" 
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="25" 
+		frame_wait="0.082" 
+		frame_width="45" 
+		frames_per_row="8" 
+		name="run" 
+		pos_x="0" 
+		pos_y="25" 
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="6" 
+		frame_height="25" 
+		frame_wait="0.082" 
+		frame_width="45" 
+		frames_per_row="8" 
+		name="burn" 
+		pos_x="0" 
+		pos_y="25"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="3" 
+		frame_height="25" 
+		frame_wait="0.082" 
+		frame_width="45" 
+		frames_per_row="8" 
+		loop="0" 
+		name="jump_up" 
+		pos_x="0" 
+		pos_y="50"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="3" 
+		frame_height="25" 
+		frame_wait="0.082" 
+		frame_width="45" 
+		frames_per_row="8" 
+		loop="0" 
+		name="jump_fall" 
+		pos_x="0" 
+		pos_y="50" 
+	></RectAnimation>
+
+	<RectAnimation
+		name="fly_idle"
+		pos_x="0"
+		pos_y="25"
+		frame_count="6"
+		frame_height="25"
+		frame_width="45"
+		frame_wait="0.12"
+		frames_per_row="8"
+		loop="1"
+	></RectAnimation>
+
+	<RectAnimation
+		name="fly_move"
+		pos_x="0"
+		pos_y="25"
+		frame_count="6"
+		frame_height="25"
+		frame_width="45"
+		frame_wait="0.09"
+		frames_per_row="8"
+		loop="1"
+	></RectAnimation>
+	
+	<RectAnimation 
+		frame_count="5" 
+		frame_height="25" 
+		frame_wait="0.095" 
+		frame_width="45" 
+		frames_per_row="8" 
+		loop="0" 
+		name="crouch" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		frame_count="5" 
+		frame_height="25" 
+		frame_wait="0.095" 
+		frame_width="45" 
+		frames_per_row="8" 
+		loop="0" 
+		name="attack" 
+		pos_x="0" 
+		pos_y="100" 
+
+		><Event 
+			check_physics_material="0" 
+			frame="2" 
+			max_distance="500" 
+			name="bite" 
+			on_finished="0" 
+			probability="1"
+		></Event>
+
+		<Event 
+			check_physics_material="0" 
+			frame="2" 
+			max_distance="500" 
+			name="attack_bite" 
+			on_finished="0" 
+			probability="1"
+		></Event>
+	</RectAnimation>
+
+	<RectAnimation 
+		frame_count="5" 
+		frame_height="25" 
+		frame_wait="0.12" 
+		frame_width="45" 
+		frames_per_row="8" 
+		loop="0" 
+		name="eat" 
+		pos_x="0" 
+		pos_y="100"
+		
+		><Event 
+			check_physics_material="0" 
+			frame="2" 
+			max_distance="500" 
+			name="eat" 
+			on_finished="0" 
+			probability="1"
+		></Event>
+	</RectAnimation>
+	
+	<Hotspot 
+		color="ff0000" 
+		name="head_root"
+	></Hotspot>
+</Sprite>

@@ -1,0 +1,66 @@
+<Entity>
+	<InheritTransformComponent 
+		parent_hotspot_tag="phys_pos"
+		only_position="0"
+		use_root_parent="1"
+		
+		><Transform 
+			position.x="0" 
+			position.y="0" 
+		></Transform>
+	</InheritTransformComponent>
+	
+	<PhysicsImageShapeComponent 
+		image_file="mods/necro_stuff/files/abominations/body/tiny_phys.png"
+		centered="0"
+		material="necrostate_box2d"
+		offset_x="0"
+		offset_y="0"
+	></PhysicsImageShapeComponent>
+
+	<PhysicsBodyComponent  
+		hax_fix_going_through_ground="0"
+		allow_sleep="0" 
+		auto_clean="0"
+		angular_damping="0.02" 
+		force_add_update_areas="1"
+		fixed_rotation="1" 
+		is_bullet="0"
+		is_character="1"
+		is_kinematic="1"	
+		linear_damping="0" 
+		on_death_leave_physics_body="0"
+		kills_entity="1"
+	></PhysicsBodyComponent>
+	
+	<VariableStorageComponent
+		name="this_x"
+		value_float="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="this_y"
+		value_float="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="last_x"
+		value_float="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="last_y"
+		value_float="0"
+	></VariableStorageComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/holder.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<AudioLoopComponent 
+		auto_play="1" 
+		file="data/audio/Desktop/materials.bank" 
+		event_name="materials/fast_spinning_object"
+	></AudioLoopComponent>
+</Entity>

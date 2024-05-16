@@ -1,0 +1,42 @@
+<Entity tags="vessel" >
+	<LuaComponent
+		_tags="enabled_in_world"
+		script_source_file="mods/necro_stuff/files/spells/vessel/vessel.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<VariableStorageComponent
+		name="is_wand"
+		value_bool="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="wand_stats"
+		value_string="|666|66|13|1|0|0|0|"
+	></VariableStorageComponent>
+	
+	<!-- spell stuff -->
+	<Base file="mods/necro_stuff/files/spells/base_card2.xml" > 
+		<ItemComponent
+			is_identified="1"
+			item_name="The Vessel"
+			always_use_item_name_in_ui="1"
+		></ItemComponent>
+		
+		<SpriteComponent 
+			image_file="mods/necro_stuff/files/spells/vessel/vessel.png"
+		></SpriteComponent>
+		
+		<SpriteComponent 
+			visible="0"
+		></SpriteComponent>
+	</Base>
+	
+	<!-- wand stuff -->
+	<HotspotComponent
+		_enabled="0"
+        _tags="shoot_pos"
+        offset.x="10"
+        offset.y="-2.5"
+	></HotspotComponent>
+</Entity>

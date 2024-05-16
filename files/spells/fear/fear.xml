@@ -1,0 +1,14 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/fear/fear.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+	></LuaComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/fear/unstoppable_force.lua"
+		execute_on_added="1"
+		execute_every_n_frame="1"
+		vm_type="ONE_PER_COMPONENT_INSTANCE"
+	></LuaComponent>
+</Entity>

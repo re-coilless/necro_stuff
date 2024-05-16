@@ -1,0 +1,42 @@
+<Entity name="head_combat">
+	<Base file="mods/necro_stuff/files/abominations/head/base.xml" >
+        <SpriteComponent
+            image_file="mods/necro_stuff/files/abominations/head/combat_pic.xml"
+        ></SpriteComponent>
+    </Base>
+	
+	<AnimalAIComponent 
+		preferred_job="JobDefault"
+		escape_if_damaged_probability="0"
+		attack_dash_enabled="0"
+		creature_detection_check_every_x_frames="10"
+		creature_detection_range_x="500"
+		creature_detection_range_y="500"
+		food_material="meat"
+		needs_food="0"
+		sense_creatures="1"
+		attack_ranged_action_frame="0"
+		attack_ranged_min_distance="0"
+		attack_ranged_max_distance="300"
+		attack_ranged_frames_between="40"
+		attack_ranged_aim_rotation_enabled="0"
+		attack_ranged_aim_rotation_shooting_ok_angle_deg="10"
+		attack_ranged_entity_file="mods/necro_stuff/files/spells/necro_glance/necro_glance.xml"
+		attack_ranged_offset_y="0"
+		attack_ranged_offset_x="2"
+		attack_ranged_enabled="1"
+		attack_melee_enabled="0"
+		can_fly="0"  
+		defecates_and_pees="0"
+	></AnimalAIComponent>
+	
+	<SpriteAnimatorComponent>
+	</SpriteAnimatorComponent>
+	
+	<GenomeDataComponent 
+		berserk_dont_attack_friends="1" 
+		food_chain_rank="1" 
+		herd_id="player" 
+		is_predator="1"
+	></GenomeDataComponent>
+</Entity>

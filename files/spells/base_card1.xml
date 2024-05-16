@@ -1,0 +1,43 @@
+<Entity >
+	<Base file="mods/necro_stuff/files/spells/base_card0.xml" >
+	</Base>
+	
+	<LightComponent 
+		_tags="enabled_in_world"
+		radius="128"
+		r="168"
+		g="202"
+		b="88"
+	></LightComponent>
+	
+	<ParticleEmitterComponent
+		_tags="enabled_in_world"
+		emitted_material_name="necro_current"
+		render_back="0"
+		gravity.y="0.0" 
+		fade_based_on_lifetime="1"
+		lifetime_max="0.2" 
+		lifetime_min="0.2" 
+		emit_real_particles="0"
+		collide_with_grid="0"
+		emit_cosmetic_particles="1"
+		cosmetic_force_create="1"
+		color="0"
+		render_ultrabright="1"
+		emitter_lifetime_frames="-1"
+		airflow_force="10"
+		airflow_time="5"
+		airflow_scale="1"
+		image_animation_file="mods/necro_stuff/files/spells/card_frame1.png"
+		image_animation_colors_file="mods/necro_stuff/files/spells/card_frame1_pic.png"
+		offset.x="0.5"
+		offset.y="-8.5"
+		image_animation_speed="5"
+		image_animation_raytrace_from_center="0"
+		image_animation_loop="1"
+		image_animation_use_entity_rotation="1"
+		emission_interval_max_frames="1" 
+		emission_interval_min_frames="1"
+		is_emitting="1"
+	></ParticleEmitterComponent>
+</Entity>

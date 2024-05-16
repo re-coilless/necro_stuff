@@ -1,0 +1,1 @@
+EntitySetComponentsWithTagEnabled( GetUpdatedEntityID(), "ire_init", true )

@@ -1,0 +1,30 @@
+<Entity >
+	<HitEffectComponent 
+        effect_hit="LOAD_UNIQUE_CHILD_ENTITY"
+        value_string="mods/necro_stuff/files/spells/cure/cure.xml"
+	></HitEffectComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="cure"
+		emitted_material_name="cure"
+		x_pos_offset_min="-2"
+		x_pos_offset_max="2"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-2"
+		x_vel_max="2"
+		y_vel_min="-50"
+		y_vel_max="-30"
+		count_min="5"
+		count_max="10"
+		lifetime_min="20"
+		lifetime_max="30"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="5"
+		emitter_lifetime_frames="-1"
+		is_emitting="1"
+		is_trail="1"
+	></ParticleEmitterComponent>
+</Entity>

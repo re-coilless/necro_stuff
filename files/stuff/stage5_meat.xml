@@ -1,0 +1,18 @@
+<Sprite 
+	filename="mods/necro_stuff/files/stuff/stage5_meat.png" 
+	offset_x="10"
+	offset_y="12"
+	default_animation="stand" >
+	
+	<RectAnimation
+		name="stand"
+		pos_x="0"
+		pos_y="0"
+		frame_count="6"	
+		frame_width="30"
+		frame_height="23"
+		frame_wait="0.16"
+		frames_per_row="6"
+		loop="1"  
+	></RectAnimation>
+</Sprite>

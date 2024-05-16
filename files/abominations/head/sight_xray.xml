@@ -1,0 +1,6 @@
+<Entity >
+	<MagicXRayComponent
+		radius="128"
+		steps_per_frame="8"
+	></MagicXRayComponent>
+</Entity>

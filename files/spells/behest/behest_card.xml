@@ -1,0 +1,73 @@
+<Entity >
+	<Base file="mods/necro_stuff/files/spells/base_card2.xml" > 
+		<SpriteComponent 
+			image_file="mods/necro_stuff/files/spells/behest/behest.png"
+		></SpriteComponent>
+	</Base>
+	
+	<LuaComponent
+		_tags="enabled_in_world,enabled_in_inventory,enabled_in_hand"
+		script_source_file="mods/necro_stuff/files/spells/behest/behest.lua"
+		script_enabled_changed="mods/necro_stuff/files/comp_enabler.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<LuaComponent
+		_tags="enabled_in_world"
+		script_source_file="mods/necro_stuff/files/spells/behest/behest_world.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<LuaComponent
+		_tags="enabled_in_world,enabled_in_inventory,enabled_in_hand"
+		script_source_file="mods/necro_stuff/files/spells/behest/storage_holder.lua"
+		script_enabled_changed="mods/necro_stuff/files/comp_enabler.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<VariableStorageComponent
+		name="storage_tag"
+		value_string="behest_storage"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="extra_stuff"
+		value_string="|BRUH|"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="is_active"
+		value_bool="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="gonna_pickup"
+		value_bool="0"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="count"
+		value_int="0"
+	></VariableStorageComponent>
+	
+	<InheritTransformComponent
+		_tags="enabled_in_world,enabled_in_inventory,enabled_in_hand"
+		use_root_parent="1"
+		only_position="0"
+		always_use_immediate_parent_rotation="1"
+	></InheritTransformComponent>
+	
+	<Entity tags="behest_anchor">
+		<VariableStorageComponent
+			name="link"
+			value_int="0"
+		></VariableStorageComponent>
+		
+		<InheritTransformComponent
+			_tags="enabled_in_world,enabled_in_inventory,enabled_in_hand"
+			use_root_parent="0"
+			only_position="0"
+			always_use_immediate_parent_rotation="1"
+		></InheritTransformComponent>
+	</Entity>
+</Entity>

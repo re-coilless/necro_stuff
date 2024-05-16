@@ -1,0 +1,142 @@
+<Entity tags="teleportable_NOT,item_physics,projectile" >
+	<PhysicsBodyComponent  
+		_enabled="1"
+		uid="1"
+		hax_fix_going_through_ground="0"
+		allow_sleep="0" 
+		auto_clean="0"
+		angular_damping="1" 
+		force_add_update_areas="1"
+		fixed_rotation="0" 
+		is_bullet="1"
+		is_character="0"
+		is_kinematic="0"	
+		linear_damping="0" 
+		on_death_leave_physics_body="1"
+		projectiles_rotate_toward_velocity="1"
+		kills_entity="1"
+	></PhysicsBodyComponent>
+	
+	<PhysicsImageShapeComponent 
+		_enabled="1"
+		_tags="ire_init"
+		body_id="1"
+		centered="0"
+		offset_x="0"
+		offset_y="0"
+		image_file="mods/necro_stuff/files/spells/ire/ire.png"
+		material="necrostate_box2d"
+	></PhysicsImageShapeComponent>
+	
+	<PhysicsThrowableComponent
+		_tags="enabled_in_world"
+		max_throw_speed="1000"
+		throw_force_coeff="10"
+		min_torque="0"
+		max_torque="0"
+	></PhysicsThrowableComponent>
+	
+	<ProjectileComponent
+		_enabled="1"
+		speed_min="1000"
+		speed_max="1000"
+		lifetime="-1"
+		penetrate_entities="1"
+		collide_with_world="1"
+		damage="0.0"
+		do_moveto_update="1"
+		velocity_sets_rotation="1"
+		ground_collision_fx="0"
+		ground_penetration_coeff="6"
+		ground_penetration_max_durability_to_destroy="20"
+	></ProjectileComponent>
+	
+	<VelocityComponent
+		_tags="enabled_in_world"
+		affect_physics_bodies="1"
+		mass="1"
+	></VelocityComponent>
+	
+	<SpriteComponent
+		_tags="enabled_in_hand"
+		_enabled="0"
+		offset_x="5"
+		offset_y="0"
+		image_file="mods/necro_stuff/files/spells/ire/ire.png"
+	></SpriteComponent>
+	
+	<UIInfoComponent
+		_tags="enabled_in_world"
+		name="Fault Ray"
+	></UIInfoComponent>
+	
+	<ExplodeOnDamageComponent
+		explode_on_death_percent="1"
+		explode_on_damage_percent="0.0"
+		physics_body_modified_death_probability="0.9"
+		physics_body_destruction_required="0.8"
+		><config_explosion
+			never_cache="0"
+			damage="0"
+			camera_shake="0" 
+			explosion_radius="0" 
+			explosion_sprite="" 
+			explosion_sprite_lifetime="0" 
+			create_cell_probability="0" 
+			hole_destroy_liquid="0" 
+			hole_enabled="0" 
+			ray_energy="0"
+			particle_effect="0" 
+			damage_mortals="0" 
+			physics_throw_enabled="0"
+			shake_vegetation="0" 
+			sparks_enabled="0" 
+			stains_enabled="0" 
+		></config_explosion>
+	</ExplodeOnDamageComponent>
+	
+	<AudioComponent
+		file="data/audio/Desktop/projectiles.bank"
+		event_root="player_projectiles/throwable"
+	></AudioComponent>
+	
+	<VariableStorageComponent
+		name="projectile_file"
+		value_string="mods/necro_stuff/files/spells/fault/fault_ray.xml"
+	></VariableStorageComponent>
+	
+	<Entity>
+		<InheritTransformComponent 
+			><Transform
+				position.x="-5"
+				position.y="0"
+			></Transform>
+		</InheritTransformComponent>	
+		
+		<BlackHoleComponent
+			particle_attractor_force="66"
+			damage_probability="0"
+			damage_amount="0"
+			radius="5"
+		></BlackHoleComponent>
+		
+		<LuaComponent
+			script_source_file="mods/necro_stuff/files/gravity.lua"
+			execute_every_n_frame="1"
+		></LuaComponent>
+		
+		<VariableStorageComponent
+			name="event_horizon"
+			value_float="10"
+		></VariableStorageComponent>
+		
+		<VariableStorageComponent
+			name="gravity_coef"
+			value_float="66"
+		></VariableStorageComponent>
+	</Entity>
+	
+	<Entity>
+		<Base file="mods/necro_stuff/files/spells/cure/cure.xml" ></Base>
+	</Entity>
+</Entity>

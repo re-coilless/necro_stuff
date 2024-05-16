@@ -1,0 +1,9 @@
+<Entity name="charm" >
+	<InheritTransformComponent 
+	></InheritTransformComponent>	
+	
+	<GameEffectComponent 
+		effect="CHARM"
+		frames="-1"
+	></GameEffectComponent>
+</Entity>

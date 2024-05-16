@@ -1,0 +1,7 @@
+<Entity >
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/spells/limbo/necro_inferno_starter.lua"
+		execute_on_added="1"
+		remove_after_executed="1"
+	></LuaComponent>
+</Entity>

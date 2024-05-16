@@ -1,0 +1,7 @@
+<Entity name="effigy_card" >
+	<Base file="mods/necro_stuff/files/spells/base_card0.xml" > 
+		<SpriteComponent 
+			image_file="mods/necro_stuff/files/spells/limbo/limbo.png"
+		></SpriteComponent>
+	</Base>
+</Entity>

@@ -1,0 +1,14 @@
+<Entity >
+	<Base file="mods/necro_stuff/files/spells/base_card0.xml" > 
+		<SpriteComponent 
+			image_file="mods/necro_stuff/files/spells/limbo/limbo.png"
+		></SpriteComponent>
+	</Base>
+	
+	<LuaComponent
+		_tags="enabled_in_hand"
+		vm_type="ONE_PER_COMPONENT_INSTANCE"
+		script_source_file="mods/necro_stuff/files/spells/limbo/limbo.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+</Entity>

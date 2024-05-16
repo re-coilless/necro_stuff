@@ -1,0 +1,14 @@
+<Entity>
+	<Base file="mods/necro_stuff/files/abominations/body/base_phys.xml" >
+		<InheritTransformComponent 
+			><Transform 
+				position.x="-4" 
+				position.y="-6.5" 
+			></Transform>
+		</InheritTransformComponent>
+	
+        <PhysicsImageShapeComponent 
+			image_file="mods/necro_stuff/files/abominations/body/medium_phys.png"
+		></PhysicsImageShapeComponent>
+    </Base>
+</Entity>

@@ -1,0 +1,10 @@
+<Entity name="undeader">
+    <GameEffectComponent 
+        effect="CUSTOM"
+        custom_effect_id="PHYSICS_RAGDOLL_AI"
+        frames="666"
+		ragdoll_effect="CUSTOM_RAGDOLL_ENTITY"
+		ragdoll_effect_custom_entity_file="mods/necro_stuff/files/spells/necro_ray/necromancy_ragdoll.xml"
+		ragdoll_fx_custom_entity_apply_only_to_largest_body="1"
+	></GameEffectComponent>
+</Entity>

@@ -1,0 +1,7 @@
+<Entity name="head_detector">
+	<Base file="mods/necro_stuff/files/abominations/head/base.xml" >
+        <SpriteComponent
+            image_file="mods/necro_stuff/files/abominations/head/detector_pic.xml"
+        ></SpriteComponent>
+    </Base>
+</Entity>

@@ -1,0 +1,10 @@
+<Entity tags="execution_target">
+	<LifetimeComponent
+		lifetime="2"
+	></LifetimeComponent>
+	
+	<VariableStorageComponent
+		name="execution_mode"
+		value_int="0"
+	></VariableStorageComponent>
+</Entity>

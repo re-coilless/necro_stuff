@@ -1,0 +1,50 @@
+<Sprite 
+	default_animation="float_right" 
+	filename="mods/necro_stuff/files/spells/meatchunk/jimmy_pic.png" 
+	offset_x="6" 
+	offset_y="8" >
+	
+	<RectAnimation 
+		name="float_right" 
+		frame_count="6" 
+		frame_height="17" 
+		frame_wait="0.14" 
+		frame_width="13" 
+		frames_per_row="12" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		name="float_left" 
+		frame_count="6" 
+		frame_height="17" 
+		frame_wait="0.14" 
+		frame_width="13" 
+		frames_per_row="12" 
+		pos_x="0" 
+		pos_y="17"
+	></RectAnimation>
+
+	<RectAnimation 
+		name="fly_right" 
+		frame_count="6" 
+		frame_height="17" 
+		frame_wait="0.14" 
+		frame_width="13" 
+		frames_per_row="12" 
+		pos_x="0" 
+		pos_y="0"
+	></RectAnimation>
+
+	<RectAnimation 
+		name="fly_left" 
+		frame_count="6" 
+		frame_height="17" 
+		frame_wait="0.14" 
+		frame_width="13" 
+		frames_per_row="12" 
+		pos_x="0" 
+		pos_y="17"
+	></RectAnimation>
+</Sprite>

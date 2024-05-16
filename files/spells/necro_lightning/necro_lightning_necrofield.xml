@@ -1,0 +1,44 @@
+<Entity >
+	<GameAreaEffectComponent
+		radius="30"
+		collide_with_tag="enemy"
+		frame_length="0"
+	></GameAreaEffectComponent>
+	
+	<ProjectileComponent 
+		damage_game_effect_entities="mods/necro_stuff/files/spells/necro_lightning/necromancy.xml,"
+		lifetime="5"
+		><config_explosion
+			explosion_sprite=""
+		></config_explosion>
+	</ProjectileComponent>
+	
+	<BlackHoleComponent
+		particle_attractor_force="50"
+		damage_probability="0"
+		damage_amount="0.01"
+		radius="50"
+	></BlackHoleComponent>
+	
+	<LuaComponent
+		script_source_file="mods/necro_stuff/files/gravity.lua"
+		execute_every_n_frame="1"
+	></LuaComponent>
+	
+	<VariableStorageComponent
+		name="event_horizon"
+		value_float="200"
+	></VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="gravity_coef"
+		value_float="666"
+	></VariableStorageComponent>
+	
+	<LoadEntitiesComponent
+        count.min="1"
+        count.max="1"
+        kill_entity="0"
+        entity_file="mods/necro_stuff/files/spells/necro_lightning/necro_lightning_explosion_extra.xml"
+    ></LoadEntitiesComponent>
+</Entity>
